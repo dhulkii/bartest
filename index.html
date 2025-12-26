@@ -1,14 +1,17 @@
+<!-- Full corrected HTML code as provided earlier -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Barmos FZE - Global trade in polymer raw materials and packaging solutions. Direct Middle East sourcing with European distribution since 2003.">
+    <meta name="keywords" content="polymer raw materials, packaging solutions, LDPE, HDPE, stretch films, Middle East, Europe">
     <title>Polymer Raw Materials & Packaging Solutions | Barmos FZE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Added favicon placeholder -->
 </head>
 <body>
     <!-- Top Bar -->
@@ -17,10 +20,10 @@
             <div class="top-bar-content">
                 <div class="top-bar-left">
                     <span class="top-bar-item">📍 Netherlands • Poland • Spain • Slovenia • Middle East</span>
-                    <span class="top-bar-item">✉ info@barmosfze.com</span>
+                    <span class="top-bar-item">✉ <a href="mailto:info@barmosfze.com">info@barmosfze.com</a></span>
                 </div>
                 <div class="top-bar-right">
-                    <select class="language-selector">
+                    <select class="language-selector" aria-label="Select language">
                         <option value="en">EN</option>
                         <option value="es">ES</option>
                         <option value="ar">AR</option>
@@ -39,7 +42,7 @@
                     <span class="tagline">Global Polymer Trading</span>
                 </div>
 
-                <nav class="main-nav" id="mainNav">
+                <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
                     <a href="#home">Home</a>
                     <a href="#products">Products & Materials</a>
                     <a href="#company">Company</a>
@@ -47,9 +50,9 @@
                     <a href="#contact">Contact</a>
                 </nav>
 
-                <button class="cta-button primary-cta">Request Quote</button>
+                <button class="cta-button primary-cta" aria-label="Request a quote">Request Quote</button>
 
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -59,30 +62,30 @@
     </header>
 
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="mobile-menu-content">
-            <nav class="mobile-nav">
+            <nav class="mobile-nav" role="navigation">
                 <a href="#home">Home</a>
                 <a href="#products">Products & Materials</a>
                 <a href="#company">Company</a>
                 <a href="#quality">Quality & Compliance</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <button class="cta-button primary-cta mobile-cta">Request Quote</button>
+            <button class="cta-button primary-cta mobile-cta" aria-label="Request a quote">Request Quote</button>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2 class="hero-title">Global Trade in Polymer Raw Materials & Packaging Solutions</h2>
+                    <h2 id="hero-title" class="hero-title">Global Trade in Polymer Raw Materials & Packaging Solutions</h2>
                     <p class="hero-subtitle">Bridging Middle Eastern manufacturing excellence with European distribution efficiency since 2003</p>
                     <div class="hero-cta-group">
-                        <button class="cta-button primary-cta large">Request Quotation</button>
-                        <button class="cta-button secondary-cta large">View Product Range</button>
+                        <button class="cta-button primary-cta large" aria-label="Request quotation">Request Quotation</button>
+                        <button class="cta-button secondary-cta large" aria-label="View product range">View Product Range</button>
                     </div>
                 </div>
             </div>
@@ -90,8 +93,9 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section">
+    <section class="stats-section" aria-labelledby="stats-title">
         <div class="container">
+            <h2 id="stats-title" class="sr-only">Company Statistics</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">20+</div>
@@ -110,66 +114,66 @@
     </section>
 
     <!-- Products Section -->
-    <section class="section products-section" id="products">
+    <section class="section products-section" id="products" aria-labelledby="products-title">
         <div class="container">
-            <h2 class="section-title">Products & Materials</h2>
+            <h2 id="products-title" class="section-title">Products & Materials</h2>
             <p class="section-intro">Comprehensive polymer and packaging solutions sourced from leading Middle Eastern manufacturers</p>
 
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <rect x="3" y="3" width="18" height="18" rx="2"/>
                             <path d="M3 9h18M9 3v18"/>
                         </svg>
                     </div>
                     <h3 class="product-title">Polymer Raw Materials</h3>
                     <p class="product-description">Virgin and recycled grades of LDPE, LLDPE, HDPE, PP, and PS. Full technical specifications and certifications available.</p>
-                    <a href="#" class="product-link">View grades & specifications →</a>
+                    <a href="#contact" class="product-link" aria-label="View grades and specifications for Polymer Raw Materials">View grades & specifications →</a>
                 </div>
 
                 <div class="product-card">
                     <div class="product-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="9"/>
                             <path d="M12 3v18M3 12h18"/>
                         </svg>
                     </div>
                     <h3 class="product-title">Stretch Films & Wrapping</h3>
                     <p class="product-description">High-performance polyethylene stretch films for industrial and logistics applications. Multiple thickness and width options.</p>
-                    <a href="#" class="product-link">View grades & specifications →</a>
+                    <a href="#contact" class="product-link" aria-label="View grades and specifications for Stretch Films">View grades & specifications →</a>
                 </div>
 
                 <div class="product-card">
                     <div class="product-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <rect x="2" y="6" width="20" height="12" rx="2"/>
                             <path d="M6 6V3M18 6V3M6 18v3M18 18v3"/>
                         </svg>
                     </div>
                     <h3 class="product-title">Adhesive Tapes</h3>
                     <p class="product-description">Industrial bonding and packaging tapes for diverse applications. Custom specifications available for volume orders.</p>
-                    <a href="#" class="product-link">View grades & specifications →</a>
+                    <a href="#contact" class="product-link" aria-label="View grades and specifications for Adhesive Tapes">View grades & specifications →</a>
                 </div>
 
                 <div class="product-card">
                     <div class="product-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                         </svg>
                     </div>
                     <h3 class="product-title">Complete Packaging Systems</h3>
                     <p class="product-description">Integrated packaging solutions combining materials, equipment consultation, and logistics support.</p>
-                    <a href="#" class="product-link">View grades & specifications →</a>
+                    <a href="#contact" class="product-link" aria-label="View grades and specifications for Complete Packaging Systems">View grades & specifications →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Company Section -->
-    <section class="section company-section" id="company">
+    <section class="section company-section" id="company" aria-labelledby="company-title">
         <div class="container">
-            <h2 class="section-title">About Barmos FZE</h2>
+            <h2 id="company-title" class="section-title">About Barmos FZE</h2>
 
             <div class="company-overview">
                 <div class="company-text">
@@ -221,9 +225,9 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="section testimonials-section">
+    <section class="section testimonials-section" aria-labelledby="testimonials-title">
         <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
+            <h2 id="testimonials-title" class="section-title">Client Testimonials</h2>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -254,15 +258,15 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section faq-section">
+    <section class="section faq-section" aria-labelledby="faq-title">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
 
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>What materials do you supply?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>We specialize in polymer raw materials (LDPE, LLDPE, HDPE, PP, PS) in virgin and recycled grades, polyethylene stretch films, adhesive tapes, and complete packaging solutions.</p>
@@ -270,9 +274,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>What regions do you serve?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>Our primary markets are Spain and Europe, sourced from manufacturing partners across the Middle East including Saudi Arabia, UAE, Qatar, Turkey, and Egypt.</p>
@@ -280,9 +284,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>What are your minimum order quantities?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>MOQs vary by material type and grade. Container load quantities typically offer optimal pricing. Contact our team for specific product minimums.</p>
@@ -290,9 +294,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Do you provide material specifications and certifications?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>Yes, we supply full technical data sheets, compliance certificates, and quality documentation with all shipments.</p>
@@ -300,9 +304,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>What is your typical lead time?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>European stock items: 48 hours. Middle East direct orders: 2-4 weeks depending on destination and material grade.</p>
@@ -313,27 +317,27 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-section" id="contact">
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 id="contact-title" class="section-title">Contact Us</h2>
 
             <div class="contact-grid">
                 <div class="contact-form-wrapper">
                     <h3>Send Us an Inquiry</h3>
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with actual Formspree or backend URL -->
                         <div class="form-group">
                             <label for="companyName">Company Name *</label>
-                            <input type="text" id="companyName" name="companyName" required>
+                            <input type="text" id="companyName" name="companyName" required aria-required="true">
                         </div>
 
                         <div class="form-group">
                             <label for="contactPerson">Contact Person *</label>
-                            <input type="text" id="contactPerson" name="contactPerson" required>
+                            <input type="text" id="contactPerson" name="contactPerson" required aria-required="true">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required aria-required="true">
                         </div>
 
                         <div class="form-group">
@@ -343,7 +347,7 @@
 
                         <div class="form-group">
                             <label for="materialInterest">Material Interest *</label>
-                            <select id="materialInterest" name="materialInterest" required>
+                            <select id="materialInterest" name="materialInterest" required aria-required="true">
                                 <option value="">Select a category</option>
                                 <option value="polymer">Polymer Raw Materials</option>
                                 <option value="stretch">Stretch Films</option>
@@ -355,7 +359,7 @@
 
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                         </div>
 
                         <button type="submit" class="cta-button primary-cta">Submit Inquiry</button>
@@ -370,31 +374,31 @@
                     <div class="office-info">
                         <h4>🇳🇱 Netherlands (Headquarters)</h4>
                         <p>Lelystad, Netherlands</p>
-                        <p>Email: info@barmosfze.com</p>
+                        <p><a href="mailto:info@barmosfze.com">info@barmosfze.com</a></p>
                     </div>
 
                     <div class="office-info">
                         <h4>🇵🇱 Poland</h4>
                         <p>Lodz, Poland</p>
-                        <p>Email: poland@barmosfze.com</p>
+                        <p><a href="mailto:poland@barmosfze.com">poland@barmosfze.com</a></p>
                     </div>
 
                     <div class="office-info">
                         <h4>🇪🇸 Spain</h4>
                         <p>Madrid, Spain</p>
-                        <p>Email: spain@barmosfze.com</p>
+                        <p><a href="mailto:spain@barmosfze.com">spain@barmosfze.com</a></p>
                     </div>
 
                     <div class="office-info">
                         <h4>🇸🇮 Slovenia</h4>
                         <p>Koper, Slovenia</p>
-                        <p>Email: slovenia@barmosfze.com</p>
+                        <p><a href="mailto:slovenia@barmosfze.com">slovenia@barmosfze.com</a></p>
                     </div>
 
                     <div class="office-info">
                         <h4>🌍 Middle East Operations</h4>
                         <p>Saudi Arabia, UAE Coverage</p>
-                        <p>Email: middleeast@barmosfze.com</p>
+                        <p><a href="mailto:middleeast@barmosfze.com">middleeast@barmosfze.com</a></p>
                     </div>
                 </div>
             </div>
@@ -418,10 +422,10 @@
                 <div class="footer-column">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="#">Polymer Raw Materials</a></li>
-                        <li><a href="#">Stretch Films</a></li>
-                        <li><a href="#">Adhesive Tapes</a></li>
-                        <li><a href="#">Packaging Solutions</a></li>
+                        <li><a href="#products">Polymer Raw Materials</a></li>
+                        <li><a href="#products">Stretch Films</a></li>
+                        <li><a href="#products">Adhesive Tapes</a></li>
+                        <li><a href="#products">Packaging Solutions</a></li>
                     </ul>
                 </div>
 
@@ -441,7 +445,7 @@
                         <li><a href="#contact">Request Quote</a></li>
                         <li><a href="#contact">General Inquiries</a></li>
                         <li><a href="mailto:info@barmosfze.com">info@barmosfze.com</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://linkedin.com/company/barmosfze" target="_blank" rel="noopener">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
